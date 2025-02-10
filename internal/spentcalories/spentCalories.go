@@ -21,7 +21,7 @@ func parseTraining(data string) (int, string, time.Duration, error) {
 //
 // Параметры:
 //
-// action int — количество совершенных действий (число шагов при ходьбе и беге).
+// steps int — количество совершенных действий (число шагов при ходьбе и беге).
 func distance(steps int) float64 {
 	// ваш код ниже
 }
@@ -30,8 +30,8 @@ func distance(steps int) float64 {
 //
 // Параметры:
 //
-// action int — количество совершенных действий(число шагов при ходьбе и беге).
-// duration float64 — длительность тренировки в часах.
+// steps int — количество совершенных действий(число шагов при ходьбе и беге).
+// duration time.Duration — длительность тренировки.
 func meanSpeed(steps int, duration time.Duration) float64 {
 	// ваш код ниже
 }
@@ -40,9 +40,8 @@ func meanSpeed(steps int, duration time.Duration) float64 {
 //
 // Параметры:
 //
-// action int — количество совершенных действий(число шагов при ходьбе и беге).
-// trainingType string — вид тренировки(Бег, Ходьба, Плавание).
-// duration float64 — длительность тренировки в часах.
+// data string - строка с данными.
+// weight, height float64 — вес и рост пользователя.
 func TrainingInfo(data string, weight, height float64) string {
 	// ваш код ниже
 }
@@ -57,8 +56,9 @@ const (
 //
 // Параметры:
 //
+// steps int - количество шагов.
 // weight float64 — вес пользователя.
-// duration float64 — длительность тренировки в часах.
+// duration time.Duration — длительность тренировки.
 func RunningSpentCalories(steps int, weight float64, duration time.Duration) float64 {
 	// ваш код здесь
 
@@ -74,7 +74,8 @@ const (
 //
 // Параметры:
 //
-// duration float64 — длительность тренировки в часах.
+// steps int - количество шагов.
+// duration time.Duration — длительность тренировки.
 // weight float64 — вес пользователя.
 // height float64 — рост пользователя.
 func WalkingSpentCalories(steps int, weight, height float64, duration time.Duration) float64 {
