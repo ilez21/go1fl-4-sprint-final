@@ -2,9 +2,11 @@ package main
 
 import (
 	"fmt"
+	"log"
+	"os"
 
-	"github.com/Yandex-Practicum/go1fl-4-sprint-final/internal/daysteps"
-	"github.com/Yandex-Practicum/go1fl-4-sprint-final/internal/spentcalories"
+	"github.com/Yandex-Practicum/tracker/internal/daysteps"
+	"github.com/Yandex-Practicum/tracker/internal/spentcalories"
 )
 
 func main() {
@@ -49,13 +51,14 @@ func main() {
 		"15392,Бег,0h45m",
 	}
 
-	var (
-		trainingInfo string
-		trainingLog  []string
-	)
+	var trainingLog []string
 
 	for _, v := range trainings {
-		trainingInfo = spentcalories.TrainingInfo(v, weight, height)
+		trainingInfo, err := spentcalories.TrainingInfo(v, weight, height)
+		if err != nil {
+			log.Printf("не получилось получить информацию о тренировке: %v", err)
+			os.Exit(1)
+		}
 		trainingLog = append(trainingLog, trainingInfo)
 	}
 
