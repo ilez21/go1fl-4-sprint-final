@@ -244,7 +244,7 @@ func (suite *DayStepsTestSuite) TestDayActionInfo() {
 			input:         "6000,1h00m",
 			weight:        75.0,
 			height:        1.75,
-			want:          "Количество шагов: 6000.\nДистанция составила 3.90 км.\nВы сожгли 88.59 ккал.\n",
+			want:          "Количество шагов: 6000.\nДистанция составила 3.90 км.\nВы сожгли 177.19 ккал.\n",
 			wantLogOutput: false,
 		},
 		{
@@ -252,7 +252,7 @@ func (suite *DayStepsTestSuite) TestDayActionInfo() {
 			input:         "3000,30m",
 			weight:        75.0,
 			height:        1.75,
-			want:          "Количество шагов: 3000.\nДистанция составила 1.95 км.\nВы сожгли 44.30 ккал.\n",
+			want:          "Количество шагов: 3000.\nДистанция составила 1.95 км.\nВы сожгли 88.59 ккал.\n",
 			wantLogOutput: false,
 		},
 		{
@@ -260,7 +260,7 @@ func (suite *DayStepsTestSuite) TestDayActionInfo() {
 			input:         "20000,1h00m",
 			weight:        75.0,
 			height:        1.75,
-			want:          "Количество шагов: 20000.\nДистанция составила 13.00 км.\nВы сожгли 295.31 ккал.\n",
+			want:          "Количество шагов: 20000.\nДистанция составила 13.00 км.\nВы сожгли 590.62 ккал.\n",
 			wantLogOutput: false,
 		},
 		{
@@ -268,7 +268,7 @@ func (suite *DayStepsTestSuite) TestDayActionInfo() {
 			input:         "1000,2h00m",
 			weight:        75.0,
 			height:        1.75,
-			want:          "Количество шагов: 1000.\nДистанция составила 0.65 км.\nВы сожгли 14.77 ккал.\n",
+			want:          "Количество шагов: 1000.\nДистанция составила 0.65 км.\nВы сожгли 29.53 ккал.\n",
 			wantLogOutput: false,
 		},
 		{
@@ -276,7 +276,7 @@ func (suite *DayStepsTestSuite) TestDayActionInfo() {
 			input:         "6000,1h00m",
 			weight:        60.0,
 			height:        1.85,
-			want:          "Количество шагов: 6000.\nДистанция составила 3.90 км.\nВы сожгли 74.92 ккал.\n",
+			want:          "Количество шагов: 6000.\nДистанция составила 3.90 км.\nВы сожгли 149.85 ккал.\n",
 			wantLogOutput: false,
 		},
 		{
