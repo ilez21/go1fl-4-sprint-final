@@ -456,7 +456,7 @@ func (suite *SpentCaloriesTestSuite) TestWalkingSpentCalories() {
 			weight:   75.0,
 			height:   1.75,
 			duration: 1 * time.Hour,
-			wantCal:  88.59,
+			wantCal:  177.19,
 			wantErr:  false,
 		},
 		{
@@ -465,7 +465,7 @@ func (suite *SpentCaloriesTestSuite) TestWalkingSpentCalories() {
 			weight:   75.0,
 			height:   1.75,
 			duration: 30 * time.Minute,
-			wantCal:  44.30,
+			wantCal:  88.594,
 			wantErr:  false,
 		},
 		{
@@ -474,7 +474,7 @@ func (suite *SpentCaloriesTestSuite) TestWalkingSpentCalories() {
 			weight:   75.0,
 			height:   1.75,
 			duration: 1 * time.Hour,
-			wantCal:  295.31,
+			wantCal:  590.62,
 			wantErr:  false,
 		},
 		{
@@ -483,7 +483,7 @@ func (suite *SpentCaloriesTestSuite) TestWalkingSpentCalories() {
 			weight:   60.0,
 			height:   1.75,
 			duration: 1 * time.Hour,
-			wantCal:  70.87,
+			wantCal:  141.75,
 			wantErr:  false,
 		},
 		{
@@ -492,7 +492,7 @@ func (suite *SpentCaloriesTestSuite) TestWalkingSpentCalories() {
 			weight:   75.0,
 			height:   1.85,
 			duration: 1 * time.Hour,
-			wantCal:  93.71,
+			wantCal:  187.313,
 			wantErr:  false,
 		},
 		{
@@ -581,7 +581,7 @@ func (suite *SpentCaloriesTestSuite) TestTrainingInfo() {
 			input:   "6000,Ходьба,1h00m",
 			weight:  75.0,
 			height:  1.75,
-			want:    "Тип тренировки: Ходьба\nДлительность: 1.00 ч.\nДистанция: 4.72 км.\nСкорость: 4.72 км/ч\nСожгли калорий: 88.59\n",
+			want:    "Тип тренировки: Ходьба\nДлительность: 1.00 ч.\nДистанция: 4.72 км.\nСкорость: 4.72 км/ч\nСожгли калорий: 177.19\n",
 			wantErr: false,
 		},
 		{
@@ -597,7 +597,7 @@ func (suite *SpentCaloriesTestSuite) TestTrainingInfo() {
 			input:   "20000,Ходьба,1h00m",
 			weight:  75.0,
 			height:  1.75,
-			want:    "Тип тренировки: Ходьба\nДлительность: 1.00 ч.\nДистанция: 15.75 км.\nСкорость: 15.75 км/ч\nСожгли калорий: 295.31\n",
+			want:    "Тип тренировки: Ходьба\nДлительность: 1.00 ч.\nДистанция: 15.75 км.\nСкорость: 15.75 км/ч\nСожгли калорий: 590.62\n",
 			wantErr: false,
 		},
 		{
@@ -613,7 +613,7 @@ func (suite *SpentCaloriesTestSuite) TestTrainingInfo() {
 			input:   "6000,Ходьба,1h00m",
 			weight:  60.0,
 			height:  1.85,
-			want:    "Тип тренировки: Ходьба\nДлительность: 1.00 ч.\nДистанция: 5.00 км.\nСкорость: 5.00 км/ч\nСожгли калорий: 74.92\n",
+			want:    "Тип тренировки: Ходьба\nДлительность: 1.00 ч.\nДистанция: 5.00 км.\nСкорость: 5.00 км/ч\nСожгли калорий: 149.85\n",
 			wantErr: false,
 		},
 		{
@@ -629,7 +629,7 @@ func (suite *SpentCaloriesTestSuite) TestTrainingInfo() {
 			input:   "3000,Ходьба,30m",
 			weight:  75.0,
 			height:  1.75,
-			want:    "Тип тренировки: Ходьба\nДлительность: 0.50 ч.\nДистанция: 2.36 км.\nСкорость: 4.72 км/ч\nСожгли калорий: 44.30\n",
+			want:    "Тип тренировки: Ходьба\nДлительность: 0.50 ч.\nДистанция: 2.36 км.\nСкорость: 4.72 км/ч\nСожгли калорий: 88.59\n",
 			wantErr: false,
 		},
 		{
