@@ -97,7 +97,6 @@ func TrainingInfo(data string, weight, height float64) (string, error) {
 		return "", fmt.Errorf("ошибка расчета калорий: %v", err)
 	}
 
-	// Форматируем калории в зависимости от значения
 	var caloriesStr string
 	if calories == float64(int(calories)) {
 		caloriesStr = fmt.Sprintf("%.0f", calories)

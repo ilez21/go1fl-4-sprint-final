@@ -12,7 +12,6 @@ func main() {
 	weight := 84.6
 	height := 1.87
 
-	// дневная активность
 	input := []string{
 		"678,0h50m",
 		"792,1h14m",
@@ -39,7 +38,6 @@ func main() {
 		fmt.Println(v)
 	}
 
-	// тренировки
 	trainings := []string{
 		"3456,Ходьба,3h00m",
 		"something is wrong",

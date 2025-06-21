@@ -23,7 +23,6 @@ func parsePackage(data string) (int, time.Duration, error) {
 		return 0, 0, errors.New("неверный формат данных: ожидается 2 значения через запятую")
 	}
 
-	// Удаляем все пробелы из строки с шагами
 	stepsStr := strings.ReplaceAll(parts[0], " ", "")
 	if stepsStr == "" {
 		return 0, 0, errors.New("количество шагов не может быть пустым")
@@ -37,7 +36,6 @@ func parsePackage(data string) (int, time.Duration, error) {
 		return 0, 0, errors.New("количество шагов должно быть положительным")
 	}
 
-	// Удаляем все пробелы из строки с продолжительностью
 	durationStr := strings.ReplaceAll(parts[1], " ", "")
 	if durationStr == "" {
 		return 0, 0, errors.New("продолжительность не может быть пустой")
